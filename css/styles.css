@@ -1,0 +1,47 @@
+body {
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapped {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px;
+}
+
+@keyframes example {
+  0% {
+    fill: #ff00ff;
+    stroke: #0000ff;
+  }
+  20% {
+    fill: #da70d6;
+    stroke: #7fffd4;
+  }
+  35% {
+    fill: #ee82ee;
+    stroke: #00bfff;
+  }
+  50% {
+    fill: #d8bfd8;
+    stroke: #1e90ff;
+  }
+  65% {
+    fill: #e6e6fa;
+    stroke: #7b68ee;
+  }
+  85% {
+    fill: #13f20f;
+    stroke: #05d8f4;
+  }
+  100% {
+    fill: #ff00ff;
+    stroke: #0000ff;
+  }
+}
+
+circle {
+  animation: example 5s ease-in-out 2s infinite alternate;
+}
